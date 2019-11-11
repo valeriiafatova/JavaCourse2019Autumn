@@ -7,12 +7,9 @@
 
 <html>
 <body>
-
-Locale: ${locale}
-<br>
-Bundle: ${bundle}
-<br>
+ABOUT PAGE <br>
+Locale: ${locale} <br>
+Bundle: ${bundle} <br>
 <fmt:message key="greeting"/>
-
 </body>
 </html>
