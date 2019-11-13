@@ -7,9 +7,9 @@ public class UserService {
     
     private static Map<String, User> userMap = new HashMap<>();
     static {
-        userMap.put("admin", new User(1, "admin", "nimda", "Admin"));
-        userMap.put("user1", new User(2, "user1", "nimda", "User 1"));
-        userMap.put("user2", new User(3, "user2", "nimda", "User 2"));
+        userMap.put("admin", new User(1, "admin", "nimda", "Admin", Role.ADMIN));
+        userMap.put("user1", new User(2, "user1", "nimda", "User 1", Role.USER));
+        userMap.put("user2", new User(3, "user2", "nimda", "User 2", Role.USER));
     }
     
     public boolean validateUser(String login, String password){

@@ -5,12 +5,14 @@ public class User {
     private String login;
     private String password;
     private String name;
+    private Role role;
 
-    public User(int id, String login, String password, String name) {
+    public User(int id, String login, String password, String name, Role role) {
         this.id = id;
         this.login = login;
         this.password = password;
         this.name = name;
+        this.role = role;
     }
 
     public User() {
@@ -48,9 +50,17 @@ public class User {
         this.name = name;
     }
 
+    public Role getRole() {
+        return role;
+    }
+
+    public void setRole(Role role) {
+        this.role = role;
+    }
+
     @Override
     public String toString() {
         return "User{" + "id=" + id + ", login='" + login + '\'' + ", password='" + password + '\'' + ", name='" +
-                name + '\'' + '}';
+                name + '\'' + ", role=" + role + '}';
     }
 }

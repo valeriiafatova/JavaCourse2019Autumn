@@ -3,7 +3,6 @@
 <html>
 <head>
     <title>Login</title>
-    <base href="${pageContext.request.contextPath}/">
 </head>
 <body>
 
@@ -17,5 +16,8 @@
     <input type="submit" value="login">
 
 </form>
+
+<c:import url="navigation.jsp"/>
+
 </body>
 </html>
