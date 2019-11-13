@@ -6,8 +6,15 @@
 <fmt:setBundle basename="${bundle}"/>
 
 <html>
+<head>
+    <base href="${pageContext.request.contextPath}/">
+</head>
 <body>
 
+User in session ${user.name}
+<br>
+<a href="login" >Login</a>
+<br>
 Locale: ${locale}
 <br>
 Bundle: ${bundle}
